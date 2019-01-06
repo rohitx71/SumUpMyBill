@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+
+    android:paddingTop="?android:attr/actionBarSize"
+
+    tools:context="servicetax.androidtaxcalculator.Dashboard">
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#806495ED"
+        android:orientation="horizontal"
+
+        android:paddingEnd="5dp"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/txt_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="Outlet"
+           android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/txt_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_weight="1"
+            android:gravity="center"
+            android:text="Total Tax"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_weight="1"
+         android:gravity="center"
+            android:text="Goto"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lst_dash2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear2"
+        android:background="@android:color/transparent"
+
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#d3d3d3"
+        android:dividerHeight="1dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none">
+
+    </ListView>
+
+</RelativeLayout>

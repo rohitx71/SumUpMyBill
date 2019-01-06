@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/starbucks_banner"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="25dp"
+
+        android:layout_height="25dp"
+        android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+</android.support.v7.widget.Toolbar>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linear_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            tools:context="servicetax.androidtaxcalculator.Calculate">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/dominos"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="30dp"
+
+                    android:layout_height="30dp"
+                    android:src="@drawable/material_back"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="12dp" />
+            </RelativeLayout>
+
+            <!--   <View
+                   android:layout_width="match_parent"
+                   android:layout_height="3dp"
+                   android:layout_marginTop="20dp"
+                   android:background="@android:color/darker_gray"></View>-->
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enter Amount "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_amt"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!--  <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="35dp"
+                     android:layout_marginTop="2dp"
+                     android:src="@drawable/plus"
+                  android:layout_gravity="center" />-->
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/txt_service_label"
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:text="Service Taxes"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_colon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ems="5"
+
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_service"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:ems="5"
+                    android:gravity="end"
+                    android:text="Rs. 0.0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <!-- <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="35dp"
+                 android:layout_marginTop="2dp"
+                 android:layout_gravity="center"
+                 android:src="@drawable/plus" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/txt_vat_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:text="VAT (5.8%)"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ems="5"
+
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_vat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:ems="5"
+                    android:gravity="end"
+                    android:text="Rs. 0.0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <!--  <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp"
+                  android:layout_marginTop="2dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/plus" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp">
+
+                <TextView
+
+                    android:id="@+id/txt_other_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:text="Other Taxes (5.8%)"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ems="5"
+
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:ems="5"
+                    android:gravity="end"
+                    android:text="Rs. 0.0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <!--  <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="2dp"
+                  android:layout_gravity="center"
+                  android:src="@drawable/plus" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:id="@+id/txt_kkc_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="75"
+                    android:gravity="left"
+                    android:text="Krishi Kalyan Cess (5.8%)"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ems="5"
+
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt_kkc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:ems="5"
+                    android:gravity="end"
+                    android:text="Rs. 0.0"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <!--  <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:text="(Modiji Zindabad) " />-->
+
+            <!--  <View
+                  android:layout_width="match_parent"
+                  android:layout_height="3dp"
+                  android:layout_marginTop="15dp"
+                  android:background="#d3d3d3"></View>-->
+
+
+            <!--  <View
+                  android:layout_width="match_parent"
+                  android:layout_height="3dp"
+                  android:layout_marginTop="5dp"
+                  android:background="#d3d3d3"></View>
+      
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+      
+                  android:layout_marginTop="5dp">
+      
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                     android:layout_weight="1"
+                      android:text="Total Amount  "
+      android:textStyle="bold"
+                      android:textSize="20sp" />
+      
+                  <TextView
+                      android:id="@+id/txt_total"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:ems="5"
+                      android:text=": Rs. 0"
+                      android:textSize="22sp"
+                      android:textColor="#000000"
+      
+                      android:textStyle="bold" />
+      
+      
+              </LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linear_list2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/linear_list"
+            android:layout_weight="20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            tools:context="servicetax.androidtaxcalculator.Calculate">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:background="#d3d3d3"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Total Amount  "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="5"
+                    android:gravity="end"
+                    android:paddingRight="10dp"
+                    android:text=" Rs. 0"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Calculate Total Amount "
+        fbutton:buttonColor="@color/fbutton_color_emerald"
+
+        fbutton:cornerRadius="5dp"
+        fbutton:shadowColor="@color/fbutton_color_nephritis"
+        fbutton:shadowEnabled="true"
+        android:layout_marginBottom="10dp"
+        fbutton:shadowHeight="5dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:paddingTop="?android:attr/actionBarSize"
+
+    tools:context="servicetax.androidtaxcalculator.Dashboard">
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#806495ED"
+        android:orientation="horizontal"
+
+        android:paddingEnd="5dp"
+
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/txt_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="Outlet"
+            android:layout_weight="80"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/txt_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:text="Total Tax"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lst_dash2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_below="@id/linear2"
+      android:scrollbars="none"
+android:layout_marginTop="4dp"
+
+
+       >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--<ListView
+        android:id="@+id/lst_dash"
+         android:clipToPadding="false"
+          android:outlineProvider="bounds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_view"
+        android:background="@android:color/transparent"
+
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#d3d3d3"
+        android:dividerHeight="1dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:scrollbars="none">-->
+
+
+
+
+</RelativeLayout>
